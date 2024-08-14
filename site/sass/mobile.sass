@@ -1,0 +1,227 @@
+@media only screen and (max-width: 480px)
+	.mobile-hide
+		display: none
+
+	.mobile-show
+		display: initial
+
+	.h
+		&-left
+			width: 50px
+			height: 50px
+
+			&-img
+				&.tablet-show
+					display: none
+
+				&.mobile-show
+					height: 30px
+					width: 35px
+
+	.sec2
+		
+
+	.sec3
+		width: calc(100% - 2em)
+		margin: 1em
+		grid-template-columns: 1
+		grid-gap: 1em
+		grid-template-areas: ''
+
+		&-block
+			&-title
+				font-size: 18px
+
+	.sec5
+		max-height: calc(60vh - 60px)
+		margin: 20px 0px
+
+		&:first-child
+			margin-top: 7px
+
+		&-title
+			font-size: 20px
+			margin-bottom: 4px
+
+		& > .wrap
+			max-height: calc(55vh - 110px)
+
+	.sec6
+		width: 75%
+		margin: 20px auto
+
+		&:first-child
+			margin-top: 7px
+
+		&-title
+			font-size: 20px
+			margin-bottom: 20px
+
+		&-desc
+			font-size: 11px
+			line-height: 19px
+
+	.sec7
+		width: calc(100% - 40px)
+		margin: 20px
+
+		&:first-child
+			margin-top: 7px
+
+		&-col
+			width: 100%
+			margin: 7px 0px
+
+			&-desc
+				margin-bottom: 7px
+
+				&-title
+					font-size: 20px
+					margin-bottom: 7px
+
+			&-blocks
+				& > .small
+					height: 60vw
+					margin: 7px 0px
+
+				& > .big
+					height: calc(100vw - 40px)
+					margin: 7px 0px
+
+			&.reverse
+				& > .sec7-col-desc
+					margin-top: 7px
+
+				& > .sec7-col-blocks > .big
+					margin: 7px 0px
+
+	.sec8
+		width: calc(100% - 40px)
+		margin: 20px
+
+		&:first-child
+			margin-top: 7px
+
+		&-line
+			width: 100%
+			margin: 7px 0px
+
+			& > .wrap
+				width: 100%
+				height: calc(100vw - 40px)
+				margin: 7px 0px
+
+	.sec9
+		max-height: calc(60vh - 60px)
+		margin: 20px 0px
+
+		&:first-child
+			margin-top: 7px
+
+		& > .wrap
+			max-height: calc(55vh - 110px)
+
+	.sec10
+		margin-top: 20px
+
+		& > h1
+			margin: 25px 0px 10px
+			font-size: 23px
+
+		&-aths
+			margin-bottom: 20px
+
+			&-block
+				margin: 7px 0px
+
+				& > .wrap
+					margin-bottom: 7px
+
+				& > h2
+					margin-bottom: 7px
+					font-size: 17px
+
+				& > h3
+					font-size: 12px
+
+	.f
+		padding-bottom: 1em 
+
+		& > .wrap
+			height: 125px
+			flex-direction: column
+			align-items: center
+
+		&-center
+			& > a
+				margin-top: 1em
+
+		&-cont
+			height: 550px
+
+			&-left
+				width: calc(100% - 2em)
+				margin: 0px 1em 40px 
+
+			&-right
+				& > strong
+					font-size: 23px
+
+@media only screen and (max-width: 320px)
+	.h
+
+	.sec5
+		max-height: calc(55vh - 60px)
+
+		&:first-child
+			margin-top: 5px
+
+		&-title
+			font-size: 17px
+			margin-bottom: 4px
+
+		& > .wrap
+			max-height: calc(50vh - 110px)
+
+	.sec6
+		width: 80%
+		
+		&:first-child
+			margin-top: 5px
+
+		&-title
+			font-size: 17px
+			margin-bottom: 17px
+
+	.sec7
+		&:first-child
+			margin-top: 5px
+
+		&-col
+			&-desc
+				&-title
+					font-size: 17px
+					margin-bottom: 5px
+
+	.sec9
+		max-height: calc(55vh - 60px)
+
+		&:first-child
+			margin-top: 5px
+
+		& > .wrap
+			max-height: calc(50vh - 110px)
+
+	.sec10
+		& > h1
+			font-size: 21px
+
+		&-aths
+			&-block
+				&.mob-2-1
+					grid-column: 1/13
+
+				&.mob-2-2
+					grid-column: 1/13
+
+	.f

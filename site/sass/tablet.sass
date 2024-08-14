@@ -1,0 +1,367 @@
+@media only screen and (max-width: 768px)
+	.tablet-hide
+		display: none
+
+	.tablet-show
+		display: initial
+
+	.h
+		height: 50px
+
+		&.empty
+			&.fixed
+				height: 50px
+
+		& > .wrap
+			height: 100%
+
+		&-left
+			width: 200px
+			height: 50px
+
+			&-img.tablet-show
+				height: 30px
+				display: block
+
+		&-right
+			&-menu
+				display: flex
+				justify-content: center
+				align-items: center
+
+	.sec2
+		
+
+	.sec3
+		width: calc(100% - 3em)
+		margin: 1.5em
+		grid-template-columns: 2 
+		grid-gap: 1.5em
+		grid-template-areas: ''
+
+		&-block
+			&-title
+				font-size: 17px
+
+	.sec4
+		&-block
+			max-width: calc(576px - 4em)
+
+			&-left
+				min-width: calc(175px + 0.5em)
+				height: calc(175px + 0.5em)
+
+				&-bg
+					width: 150px
+					height: 150px
+
+				& > img
+					width: 175px
+					height: 175px
+					margin: 0.5em 0em 0em 0.5em
+
+			&-right
+				& > strong
+					font-size: 14px
+
+				& > h1
+					margin: 1.5em 0em 1em
+					font-size: 18px
+
+				& > p
+					font-size: 14px
+
+			&.reverse
+				& > .sec4-block-left > img
+					margin: 0.5em 0.5em 0em 0em
+
+	.sec5
+		max-height: calc(70vh - 60px)
+		margin: 30px 0px
+
+		&-title
+			font-size: 30px
+			margin-bottom: 6px
+
+		& > .wrap
+			max-height: calc(65vh - 110px)
+
+	.sec6
+		width: 60%
+		margin: 30px auto
+
+		&-title
+			font-size: 27px
+			margin-bottom: 30px
+
+		&-desc
+			font-size: 15px
+			line-height: 25px
+
+	.sec7
+		margin: 30px auto
+
+		&-col
+			width: 260px
+			margin: 0px 5px
+
+			&-desc
+				margin-bottom: 5px
+
+				&-title
+					margin-bottom: 5px
+
+				&-text
+					max-height: 125px
+					-webkit-line-clamp: 7
+
+			&-blocks
+				& > .small
+					height: 175px
+					margin: 5px 0px
+
+				& > .big
+					height: 260px
+					margin: 5px 0px
+
+			&.reverse
+				& > .sec7-col-blocks > .big
+					margin-bottom: 5px
+
+	.sec8
+		width: 530px
+		margin: 30px auto
+
+		&-line
+			margin: 5px 0px
+
+			& > .wrap
+				width: 260px
+				height: 260px
+
+	.sec9
+		max-height: calc(70vh - 60px)
+		margin: 30px 0px
+
+		& > .wrap
+			max-height: calc(65vh - 110px)
+
+	.sec10
+		margin-top: 30px
+
+		& > h1
+			margin: 45px 0px 20px
+			font-size: 27px
+
+		&-aths
+			margin-bottom: 30px
+
+			&-block
+				&.tablet-1
+					grid-column: 1/13
+
+				&.tablet-2-1
+					grid-column: 1/7
+
+				&.tablet-2-2
+					grid-column: 7/13
+
+				&.tablet-3-1
+					grid-column: 1/5
+
+				&.tablet-3-2
+					grid-column: 5/9
+
+				&.tablet-3-3
+					grid-column: 9/13
+
+	.f
+		&-center
+			& > a
+				font-size: 17px
+
+		&-cont
+			height: 600px
+
+			& > .wrap.special
+				flex-direction: column
+				justify-content: center
+
+			&-left
+				margin-bottom: 60px
+
+@media only screen and (max-width: 576px)
+	.h
+
+	.sec3
+		grid-template-columns: 1fr
+
+		&-block
+			&-wrap
+				height: 50vw
+
+			&-title
+				font-size: 20px
+
+	.sec4
+		&-block
+			flex-direction: column
+
+			&-left
+				width: calc(100vw - 4em)
+				height: calc(100vw - 4em)
+				margin: 0px 0px 40px
+
+				&-bg
+					width: 70%
+					height: 70%
+
+				& > img
+					width: calc(100% - 0.5em)
+					height: calc(100% - 0.5em)
+
+			&.reverse
+				flex-direction: column
+
+				& > .sec4-block-left
+					margin: 0px 0px 40px
+
+	.sec5
+		max-height: calc(65vh - 60px)
+		margin: 25px 0px
+
+		&:first-child
+			margin-top: 10px
+
+		&-title
+			font-size: 25px
+			margin-bottom: 5px
+
+		& > .wrap
+			max-height: calc(60vh - 110px)
+
+	.sec6
+		width: 70%
+		margin: 25px auto
+
+		&:first-child
+			margin-top: 10px
+
+		&-title
+			font-size: 23px
+			margin-bottom: 25px
+
+		&-desc
+			font-size: 13px
+			line-height: 22px
+
+	.sec7
+		margin: 25px auto
+		flex-direction: column
+
+		&:first-child
+			margin-top: 10px
+
+		&-col
+			width: 375px
+			margin: 10px 0px
+
+			&:first-child, &:last-child
+				margin-top: 0px
+
+			&-desc
+				margin-bottom: 10px
+
+				&-title
+					margin-bottom: 10px
+					font-size: 25px
+
+				&-text
+					max-height: 140px
+					font-size: 12px
+					line-height: 20px
+
+			&-blocks
+				& > .small
+					height: 250px
+					margin: 10px 0px
+
+				& > .big
+					margin: 10px 0px
+
+			&.reverse
+				&:last-child
+					margin-bottom: 0px
+
+				& > .sec7-col-desc
+					margin-top: 10px
+
+				& > .sec7-col-blocks > .big
+					margin: 10px 0px
+
+	.sec8
+		width: auto
+		margin: 25px auto
+
+		&:first-child
+			margin-top: 10px
+
+		&-line
+			flex-direction: column
+			margin: 10px 0px
+
+			&:first-child
+				margin-top: 0px
+
+			&:last-child
+				margin-bottom: 0px
+
+			& > .wrap
+				width: 375px
+				height: 375px
+				margin: 10px 0px
+
+				&:first-child
+					margin-top: 0px
+
+				&:last-child
+					margin-bottom: 0px
+
+	.sec9
+		max-height: calc(65vh - 60px)
+		margin: 25px 0px
+
+		&:first-child
+			margin-top: 10px
+
+		& > .wrap
+			max-height: calc(60vh - 110px)
+
+	.sec10
+		margin-top: 25px
+
+		& > h1
+			margin: 35px 0px 15px
+			font-size: 25px
+
+		&-aths
+			margin-bottom: 25px
+
+			&-block
+				margin: 10px 0px
+
+				&.mob-1
+					grid-column: 1/13
+
+				&.mob-2-1
+					grid-column: 1/7
+
+				&.mob-2-2
+					grid-column: 7/13
+
+	.f
+		&-right
+			&-br
+				width: 30px
+				height: 30px
+				margin-right: 0.5em
